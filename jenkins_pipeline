@@ -3,36 +3,38 @@ agent any
 stages {
   stage('Build') {
       steps {
-      echo 'build code using build automation tool: Apache Ant'
+      echo '1 - build code using build automation tool: Apache Ant'
       }
   }
   stage('Unit and integration tests') {
       steps {
-      echo 'unit and integration tests blah blah '
+      echo '2 - unit tests to ensure code functions, and different parts work together. using Appium'
       }
   }
   stage('Code Analysis') {
       steps {
-      echo 'Check the quality of the code'
+      echo '3 - analyse code to ensure industry standard, using Coverity'
       }
      
   }
   stage('Security scan') {
       steps {
-      echo 'do security scan'
+      echo '4 - do security scan to identify vulnerabilities, using SonarQube'
       }
   }
   stage('Deploy to staging') {
       steps {
-      echo 'Deploy the application to a testing environment specified by the application'
+      echo '5 - Deploy to staging server - AWS EC2'
       }
   }
   stage('Integration tests on staging') {
-      steps { sleep 10 } 
+      steps { 
+      echo '6 - run integration tests to ensure expected behaviour in production-like environment' 
+    } 
   }
   stage('Deploy to Production') {
       steps {
-          echo 'Deploying the code to the production environemnt:'
+          echo '7 - Deploying the code to the production server - AWS EC2'
       }
     }
   }
