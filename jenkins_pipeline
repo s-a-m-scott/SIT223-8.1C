@@ -8,7 +8,7 @@ stages {
   }
   stage('Unit and integration tests') {
       steps {
-      
+      echo 'unit and integration tests blah blah '
       }
   }
   stage('Code Analysis') {
