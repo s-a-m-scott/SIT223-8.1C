@@ -1,0 +1,39 @@
+pipeline {
+agent any
+stages {
+  stage('Build') {
+      steps {
+      echo 'build code using build automation tool: Apache Ant'
+      }
+  }
+  stage('Unit and integration tests') {
+      steps {
+      
+      }
+  }
+  stage('Code Analysis') {
+      steps {
+      echo 'Check the quality of the code'
+      }
+     
+  }
+  stage('Security scan') {
+      steps {
+      echo 'Deploy the application to a testing environment specified by the application'
+      }
+  }
+  stage('Deploy to staging') {
+      steps {
+      echo 'Deploy the application to a testing environment specified by the application'
+      }
+  }
+  stage('Integration tests on staging') {
+      steps { sleep 10 } 
+  }
+  stage('Deploy to Production') {
+      steps {
+          echo 'Deploying the code to the production environemnt:'
+      }
+    }
+  }
+}
