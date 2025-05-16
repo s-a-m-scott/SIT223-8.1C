@@ -19,7 +19,7 @@ stages {
   }
   stage('Security scan') {
       steps {
-      echo 'Deploy the application to a testing environment specified by the application'
+      echo 'do security scan'
       }
   }
   stage('Deploy to staging') {
