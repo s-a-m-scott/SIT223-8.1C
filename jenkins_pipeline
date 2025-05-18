@@ -11,7 +11,7 @@ stages {
       echo '2 - unit tests to ensure code functions, and different parts work together. using Appium'
       emailext body: 'Running unit and integration tests',
       subject: 'Jenkins - Unit and integration tests',
-      to: 's223256556@deakin.edu.au'
+      to: 'samscott1112@gmail.com'
       }
   }
   stage('Code Analysis') {
@@ -25,7 +25,7 @@ stages {
       echo '4 - do security scan to identify vulnerabilities, using SonarQube'
       emailext body: 'Running security scans',
       subject: 'Jenkins - Security scans',
-      to: 's223256556@deakin.edu.au'
+      to: 'samscott1112@gmail.com'
       }
   }
   stage('Deploy to staging') {
