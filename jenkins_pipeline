@@ -9,7 +9,7 @@ stages {
   stage('Unit and integration tests') {
       steps {
       echo '2 - unit tests to ensure code functions, and different parts work together. using Appium'
-      emailext body: 'Running unit and integration tests',
+      mail body: 'Running unit and integration tests',
       subject: 'Jenkins - Unit and integration tests',
       to: 'samscott1112@gmail.com'
       }
@@ -23,7 +23,7 @@ stages {
   stage('Security scan') {
       steps {
       echo '4 - do security scan to identify vulnerabilities, using SonarQube'
-      emailext body: 'Running security scans',
+      mail body: 'Running security scans',
       subject: 'Jenkins - Security scans',
       to: 'samscott1112@gmail.com'
       }
