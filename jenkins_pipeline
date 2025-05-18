@@ -9,6 +9,9 @@ stages {
   stage('Unit and integration tests') {
       steps {
       echo '2 - unit tests to ensure code functions, and different parts work together. using Appium'
+      emailext body: 'Test Message',
+      subject: 'Test Subject',
+      to: 'test@example.com'
       }
   }
   stage('Code Analysis') {
