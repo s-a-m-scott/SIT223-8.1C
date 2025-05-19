@@ -3,7 +3,7 @@ agent any
 stages {
   stage('Build') {
       steps { 
-      echo '1 - build code using build automation tool: Apache Ant'
+      echo '1 - build code using build automation tool: Apache Ant'   
       }
   }
   stage('Unit and integration tests') {
