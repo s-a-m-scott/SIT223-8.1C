@@ -27,7 +27,7 @@ stages {
       echo '4 - do security scan to identify vulnerabilities, using SonarQube'
       emailext body: '',
       attachLog : true,
-      subject: 'Jenkins - Unit and integration tests',
+      subject: 'Jenkins - Security scan',
       to: 'samscott1112@gmail.com',
       from: 'samscott1112@gmail.com'
       }
