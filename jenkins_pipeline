@@ -13,7 +13,7 @@ stages {
       attachLog : true,
       subject: 'Jenkins - Unit and integration tests',
       from: 'samscott1112@gmail.com',
-      to: 'samscott1112@gmail.com'
+      to: 'samscott1112@gmail.com'      
       }
   }
   stage('Code Analysis') {
