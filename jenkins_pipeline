@@ -1,6 +1,6 @@
 pipeline {
 agent any     
-stages {
+stages {    
   stage('Build') {   
       steps { 
       echo '1 - build code using build automation tool: Apache Ant'   
