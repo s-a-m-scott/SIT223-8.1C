@@ -12,6 +12,7 @@ stages {
       emailext body: '',
       attachLog : true,
       subject: 'Jenkins - Unit and integration tests',
+      from: 'samscott1112@gmail.com'
       to: 'samscott1112@gmail.com'
       }
   }
@@ -28,6 +29,7 @@ stages {
       attachLog : true,
       subject: 'Jenkins - Unit and integration tests',
       to: 'samscott1112@gmail.com'
+      from: 'samscott1112@gmail.com'
       }
   }
   stage('Deploy to staging') {
