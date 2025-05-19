@@ -2,7 +2,7 @@ pipeline {
 agent any
 stages {
   stage('Build') {
-      steps {
+      steps { 
       echo '1 - build code using build automation tool: Apache Ant'
       }
   }
